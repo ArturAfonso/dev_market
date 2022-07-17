@@ -1,0 +1,32 @@
+name: teste_dev_flutter
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.18.0-148.0.dev <3.0.0'
+
+dependencies: 
+
+  badges: ^2.0.3
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  get_storage: ^2.0.3
+  intl:
+  mask_text_input_formatter: ^2.3.0
+  
+  validatorless: ^1.2.1
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: 2.0.1
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
+  assets:
+    - assets/compras-online.png
+    - assets/fruits/
+
