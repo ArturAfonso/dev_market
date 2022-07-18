@@ -29,4 +29,7 @@ flutter:
   assets:
     - assets/compras-online.png
     - assets/fruits/
+    - assets/1.mp4
+    - assets/2.mp4
+
 

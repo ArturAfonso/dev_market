@@ -18,9 +18,13 @@ class HomeController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    if (storageUser.read('user') != null) {
-      var tempuser = storageUser.read('user');
-      user = UserModel.fromJson(tempuser);
+    var tempuser = storageUser.read('user');
+    if (tempuser != null) {
+      if (tempuser is UserModel) {
+        user = tempuser;
+      } else {
+        user = UserModel.fromJson(tempuser);
+      }
     }
   }
 

@@ -15694,8 +15694,12 @@ class _HomeTabState extends State<HomeTab> {
 
       var inventary = storageProdutos.read("produtos");
       inventary.forEach((e) {
-        Product item = Product.fromJson(e);
-        listProducts.add(item);
+        if (e is Product) {
+          listProducts.add(e);
+        } else {
+          Product item = Product.fromJson(e);
+          listProducts.add(item);
+        }
       });
     }
   }

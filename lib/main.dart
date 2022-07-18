@@ -15540,14 +15540,6 @@ iniUser() async {
     var tempuser = storageUser.read('user');
     user = UserModel.fromJson(tempuser);
   }
-
-/* 
-UserModel user = UserModel(
-    cpf: "0245555555",
-    email: "adm@gmail.com",
-    name: "adm",
-    password: "123",
-    phone: "85 9 9999-9999"); */
 }
 
 initFavorites() async {
